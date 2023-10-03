@@ -221,6 +221,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // CARD
   {
+    'nyaoklhd': {
+      'en': 'Hello World',
+      'ar': '',
+    },
+    '0oltddla': {
+      'en': 'Hello World',
+      'ar': '',
+    },
     'jf27gz7o': {
       'en': 'CheckOut',
       'ar': '',
