@@ -1,3 +1,5 @@
+import 'package:zego_uikit_prebuilt_live_streaming/zego_uikit_prebuilt_live_streaming.dart';
+
 import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/flutter_flow_widgets.dart';
@@ -29,11 +31,8 @@ class _StreamPageWidgetState extends State<StreamPageWidget> {
   @override
   void dispose() {
     _model.dispose();
-    nameIs();
-    super.dispose();
-  }
-  void nameIs(){
 
+    super.dispose();
   }
 
   @override
@@ -51,7 +50,17 @@ class _StreamPageWidgetState extends State<StreamPageWidget> {
           top: true,
           child: Column(
             mainAxisSize: MainAxisSize.max,
-            children: [],
+            children: [
+              ZegoUIKitPrebuiltLiveStreaming(
+                appID: 2073713405,
+                appSign:
+                    '1fead54d1af0497cd9bb0e104a860e5e0361468d9f21b47b066028807ccd2edc' /*input your AppSign*/,
+                userID: "uok",
+                userName: "usama",
+                liveID: '123',
+                config: ZegoUIKitPrebuiltLiveStreamingConfig.host(),
+              )
+            ],
           ),
         ),
       ),
