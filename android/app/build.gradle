@@ -53,6 +53,7 @@ android {
         targetSdkVersion 33
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
+        multiDexEnabled true
     }
 
    signingConfigs {
@@ -72,8 +73,8 @@ android {
         }
     }
 }
--keep class **.zego.** { *; }
--keep class **.**.zego_zpns.** { *; }
+//-keep class **.zego.** { *; }
+//-keep class **.**.zego_zpns.** { *; }
 
 flutter {
     source '../..'
@@ -81,4 +82,5 @@ flutter {
 
 dependencies {
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "androidx.multidex:multidex:2.0.1"
 }
