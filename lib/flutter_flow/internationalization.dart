@@ -139,6 +139,10 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
       'en': 'Live Now!',
       'ar': 'يذاع الآن!',
     },
+    '5cgozh0v': {
+      'en': 'StartNow',
+      'ar': 'ابدأ الآن',
+    },
     'mk70w3ur': {
       'en': 'Last Offer',
       'ar': 'العرض الأخير',
@@ -297,7 +301,14 @@ final kTranslationsMap = <Map<String, Map<String, String>>>[
   },
   // StreamPage
   {
-    'ecdf7m87': {
+    'n6lsucw3': {
+      'en': 'Home',
+      'ar': '',
+    },
+  },
+  // StreamPageAudiance
+  {
+    'w6whk6kn': {
       'en': 'Home',
       'ar': '',
     },

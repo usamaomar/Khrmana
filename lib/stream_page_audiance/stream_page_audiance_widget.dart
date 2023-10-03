@@ -5,25 +5,26 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
-import 'stream_page_model.dart';
-export 'stream_page_model.dart';
+import 'stream_page_audiance_model.dart';
+export 'stream_page_audiance_model.dart';
 
-class StreamPageWidget extends StatefulWidget {
-  const StreamPageWidget({Key? key}) : super(key: key);
+class StreamPageAudianceWidget extends StatefulWidget {
+  const StreamPageAudianceWidget({Key? key}) : super(key: key);
 
   @override
-  _StreamPageWidgetState createState() => _StreamPageWidgetState();
+  _StreamPageAudianceWidgetState createState() =>
+      _StreamPageAudianceWidgetState();
 }
 
-class _StreamPageWidgetState extends State<StreamPageWidget> {
-  late StreamPageModel _model;
+class _StreamPageAudianceWidgetState extends State<StreamPageAudianceWidget> {
+  late StreamPageAudianceModel _model;
 
   final scaffoldKey = GlobalKey<ScaffoldState>();
 
   @override
   void initState() {
     super.initState();
-    _model = createModel(context, () => StreamPageModel());
+    _model = createModel(context, () => StreamPageAudianceModel());
   }
 
   @override

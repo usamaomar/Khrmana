@@ -90,6 +90,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier) => GoRouter(
               name: 'StreamPage',
               path: 'streamPage',
               builder: (context, params) => StreamPageWidget(),
+            ),
+            FFRoute(
+              name: 'StreamPageAudiance',
+              path: 'streamPageAudiance',
+              builder: (context, params) => StreamPageAudianceWidget(),
             )
           ].map((r) => r.toRoute(appStateNotifier)).toList(),
         ),
