@@ -632,7 +632,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                       ),
                                       child: Container(
                                         width: 200.0,
-                                        height: 300.0,
+                                        height: 310.0,
                                         decoration: BoxDecoration(
                                           gradient: LinearGradient(
                                             colors: [
