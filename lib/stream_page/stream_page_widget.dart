@@ -29,8 +29,11 @@ class _StreamPageWidgetState extends State<StreamPageWidget> {
   @override
   void dispose() {
     _model.dispose();
-
+    nameIs();
     super.dispose();
+  }
+  void nameIs(){
+
   }
 
   @override
