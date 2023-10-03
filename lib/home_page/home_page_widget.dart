@@ -703,7 +703,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                   children: [
                                                     Expanded(
                                                       child: Image.network(
-                                                        'https://rockidentifier.com/wiki-image/1080/6D66101C26414EBEA986F193F2ABFC2C.jpeg',
+                                                        'https://cdn.salla.sa/wROVK/pWEKp1HBY6tTN0FZR0QcIItcGaCkjDLy2ztgiNMF.jpg',
                                                         width: 100.0,
                                                         height: 135.0,
                                                         fit: BoxFit.cover,
@@ -880,7 +880,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               highlightColor: Colors.transparent,
                               onTap: () async {
                                 context.pushNamed(
-                                  'StreamPageAudiance',
+                                  'StreamPage',
                                   extra: <String, dynamic>{
                                     kTransitionInfoKey: TransitionInfo(
                                       hasTransition: true,
@@ -922,7 +922,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                           highlightColor: Colors.transparent,
                           onTap: () async {
                             context.pushNamed(
-                              'StreamPage',
+                              'StreamPageAudiance',
                               extra: <String, dynamic>{
                                 kTransitionInfoKey: TransitionInfo(
                                   hasTransition: true,
@@ -952,7 +952,7 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                     ),
                                     child: Container(
                                       width: 200.0,
-                                      height: 300.0,
+                                      height: 310.0,
                                       decoration: BoxDecoration(
                                         gradient: LinearGradient(
                                           colors: [
@@ -1240,50 +1240,47 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                                                 .circular(
                                                                     100.0),
                                                       ),
-                                                      child: Container(
-                                                        width: 80.0,
-                                                        height: 80.0,
-                                                        decoration:
-                                                            BoxDecoration(
-                                                          gradient:
-                                                              LinearGradient(
-                                                            colors: [
-                                                              Color(0xFF7D71F8),
-                                                              FlutterFlowTheme.of(
-                                                                      context)
-                                                                  .secondary
-                                                            ],
-                                                            stops: [0.0, 1.0],
-                                                            begin:
-                                                                AlignmentDirectional(
-                                                                    0.0, -1.0),
-                                                            end:
-                                                                AlignmentDirectional(
-                                                                    0, 1.0),
+                                                      child: ClipRRect(
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(
+                                                                    100.0),
+                                                        child: Container(
+                                                          width: 80.0,
+                                                          height: 80.0,
+                                                          decoration:
+                                                              BoxDecoration(
+                                                            gradient:
+                                                                LinearGradient(
+                                                              colors: [
+                                                                Color(
+                                                                    0xFF7D71F8),
+                                                                FlutterFlowTheme.of(
+                                                                        context)
+                                                                    .secondary
+                                                              ],
+                                                              stops: [0.0, 1.0],
+                                                              begin:
+                                                                  AlignmentDirectional(
+                                                                      0.0,
+                                                                      -1.0),
+                                                              end:
+                                                                  AlignmentDirectional(
+                                                                      0, 1.0),
+                                                            ),
+                                                            borderRadius:
+                                                                BorderRadius
+                                                                    .circular(
+                                                                        100.0),
                                                           ),
-                                                          borderRadius:
-                                                              BorderRadius
-                                                                  .circular(
-                                                                      100.0),
-                                                        ),
-                                                        child: Padding(
-                                                          padding:
-                                                              EdgeInsetsDirectional
-                                                                  .fromSTEB(
-                                                                      10.0,
-                                                                      10.0,
-                                                                      10.0,
-                                                                      10.0),
                                                           child: ClipRRect(
                                                             borderRadius:
                                                                 BorderRadius
                                                                     .circular(
-                                                                        10.0),
+                                                                        0.0),
                                                             child:
                                                                 Image.network(
-                                                              '',
-                                                              width: 100.0,
-                                                              height: 70.0,
+                                                              'https://www.nawa3em.com/UserFiles/010-%D9%83%D9%87%D8%B1%D9%85%D8%A7%D9%86%202.jpg',
                                                               fit: BoxFit.cover,
                                                             ),
                                                           ),
