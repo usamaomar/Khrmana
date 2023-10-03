@@ -873,6 +873,42 @@ class _HomePageWidgetState extends State<HomePageWidget>
                               ).animateOnPageLoad(
                                   animationsMap['textOnPageLoadAnimation2']!),
                             ),
+                            InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                context.pushNamed(
+                                  'StreamPageAudiance',
+                                  extra: <String, dynamic>{
+                                    kTransitionInfoKey: TransitionInfo(
+                                      hasTransition: true,
+                                      transitionType:
+                                          PageTransitionType.leftToRight,
+                                    ),
+                                  },
+                                );
+                              },
+                              child: Row(
+                                mainAxisSize: MainAxisSize.max,
+                                children: [
+                                  Text(
+                                    FFLocalizations.of(context).getText(
+                                      '5cgozh0v' /* StartNow */,
+                                    ),
+                                    style:
+                                        FlutterFlowTheme.of(context).bodyMedium,
+                                  ),
+                                  Icon(
+                                    Icons.not_started_rounded,
+                                    color: FlutterFlowTheme.of(context)
+                                        .secondaryText,
+                                    size: 24.0,
+                                  ),
+                                ],
+                              ),
+                            ),
                           ],
                         ),
                       ),
